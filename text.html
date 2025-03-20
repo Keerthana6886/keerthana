@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sliding Text Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: left;
+            align-items: corner;
+            height: 100vh;
+            background-color: hotpink;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: balck;
+            opacity: 0;
+            animation: slideIn 2s ease-out forwards;
+        }
+
+        @keyframes slideIn {
+          from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My page</h1>
+</body>
+</html>
+        

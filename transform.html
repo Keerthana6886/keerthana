@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Transform</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: pink;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            transition: transform 0.5s ease;
+            cursor: pointer;
+        }
+        
+        .original {
+            background-color: powderblue;
+        }
+        
+        .translate:hover {
+            transform: translate(20px, 20px);
+        }
+        
+        .rotate:hover {
+            transform: rotate(45deg);
+        }
+        
+        .scaleX:hover {
+            transform: scaleX(1.5);
+        }
+        
+        .scaleY:hover {
+            transform: scaleY(1.5);
+        }
+        
+        .scale:hover {
+            transform: scale(1.2, 1.2);
+        }
+        
+          .skewX:hover {
+            transform: skewX(20deg);
+        }
+        
+        .skewY:hover {
+            transform: skewY(20deg);
+        }
+        
+        .skew:hover {
+            transform: skew(10deg, 10deg);
+        }
+        
+        .matrix:hover {
+            /* matrix(a, b, c, d, tx, ty) - scale, skew, translate */
+            transform: matrix(1.2, 0.2, 0.2, 1.2, 20, 20);
+        }
+        
+        h1 {
+            color: #2c3e50;
+        }
+        
+        p {
+            max-width: 600px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Transform Properties </h1>
+    <p>hover is used for giving  motion , when we touch the box </p>
+    
+<div class="container">
+        <div class="box original">Original</div>
+        <div class="box translate">translate()</div>
+        <div class="box rotate">rotate()</div>
+        <div class="box scaleX">scaleX()</div>
+        <div class="box scaleY">scaleY()</div>
+        <div class="box scale">scale()</div>
+        <div class="box skewX">skewX()</div>
+        <div class="box skewY">skewY()</div>
+        <div class="box skew">skew()</div>
+        <div class="box matrix">matrix()</div>
+    </div>
+</body>
+</html>
+
+
+
